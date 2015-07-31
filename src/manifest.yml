@@ -1,0 +1,6 @@
+---
+applicaions:
+- name: TechPlayers.exe
+memory: 512M
+command: make
+buildpack: https://github.com/kiranbarnana/TechPlayes

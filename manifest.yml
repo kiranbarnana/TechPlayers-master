@@ -1,0 +1,6 @@
+---
+applicaions:
+- name: TechPlayers
+memory: 512M
+command: . ./autogen.sh
+buildpack: https://github.com/kiranbarnana/TechPlayes

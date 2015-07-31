@@ -1,0 +1,20 @@
+﻿Build started 7/30/2015 4:53:57 AM.
+     1>Project "C:\Users\Administrator\Documents\GitHub\TechPlayes\TechPlayers-master\win32\TechPlayers_Win32_2011.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\ /I.\win32\ /I..\src\ /Zi /nologo /W3 /WX- /Od /Oy- /D CODE_ANALYSIS /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug/vc110.pdb" /Gd /TP /wd4996 /analyze /analyze:log ".\Debug\align.cpp.nativecodeanalysis.xml" /errorReport:prompt   /analyze:quiet ..\src\align.cpp
+         align.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\ /I.\win32\ /I..\src\ /Zi /nologo /W3 /WX- /Od /Oy- /D CODE_ANALYSIS /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug/vc110.pdb" /Gd /TP /wd4996 /analyze /analyze:log ".\Debug\align_stack.cpp.nativecodeanalysis.xml" /errorReport:prompt   /analyze:quiet ..\src\align_stack.cpp
+         align_stack.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\ /I.\win32\ /I..\src\ /Zi /nologo /W3 /WX- /Od /Oy- /D CODE_ANALYSIS /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug/vc110.pdb" /Gd /TP /wd4996 /analyze /analyze:log ".\Debug\args.cpp.nativecodeanalysis.xml" /errorReport:prompt   /analyze:quiet ..\src\args.cpp
+         args.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\ /I.\win32\ /I..\src\ /Zi /nologo /W3 /WX- /Od /Oy- /D CODE_ANALYSIS /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug/vc110.pdb" /Gd /TP /wd4996 /analyze /analyze:log ".\Debug\backup.cpp.nativecodeanalysis.xml" /errorReport:prompt   /analyze:quiet ..\src\backup.cpp
+         backup.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\ /I.\win32\ /I..\src\ /Zi /nologo /W3 /WX- /Od /Oy- /D CODE_ANALYSIS /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug/vc110.pdb" /Gd /TP /wd4996 /analyze /analyze:log ".\Debug\brace_cleanup.cpp.nativecodeanalysis.xml" /errorReport:prompt   /analyze:quiet ..\src\brace_cleanup.cpp
+         brace_cleanup.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\ /I.\win32\ /I..\src\ /Zi /nologo /W3 /WX- /Od /Oy- /D CODE_ANALYSIS /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug/vc110.pdb" /Gd /TP /wd4996 /analyze /analyze:log ".\Debug\braces.cpp.nativecodeanalysis.xml" /errorReport:prompt   /analyze:quiet ..\src\braces.cpp
+         braces.cpp
+     1>Done Building Project "C:\Users\Administrator\Documents\GitHub\TechPlayes\TechPlayers-master\win32\TechPlayers_Win32_2011.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:01:26.81

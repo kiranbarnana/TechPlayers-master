@@ -1,0 +1,20 @@
+{
+  "name": "TechPlayers",
+  "version": "0.6.1",
+  "description": "A highly configurable, easily modifiable source code beautifier for C, C++, C#, ObjectiveC, D, Java, Pawn and VALA",
+  "main": "TechPlayers",
+  "scripts": {
+      "preinstall": "./configure && make"
+  },
+  "bin" : "src/TechPlayers" ,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kiranbarnana/TechPlayers"
+  },
+  "keywords": [
+    "TechPlayers",
+    "source code beautifier"
+  ],
+  "author": "Kiran Kumar",
+  "license": "GPLv3"
+}
