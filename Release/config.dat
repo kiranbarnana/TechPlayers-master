@@ -1,0 +1,2 @@
+TechPlayers.exe -cconfig/indent.cfg -f
+TechPlayers.exe -cconfig/brace-banner.cfg -f
