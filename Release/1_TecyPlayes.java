@@ -150,7 +150,6 @@ public class TecyPlayes
     group.add(birdButton);
     group.add(catButton);
     this.jFrame.add(textArea);
-    this.jFrame.add(scrollPane);
     this.jFrame.setVisible(true);
     
     System.out.println(file_path);
