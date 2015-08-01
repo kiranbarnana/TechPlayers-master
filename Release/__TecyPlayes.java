@@ -7,13 +7,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintStream;
 import javax.swing.JButton;
-import javax.swing.JRadioButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
-import javax.swing.JTextArea;
 import javax.swing.JLabel;
-import javax.swing.ButtonGroup;
-import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
@@ -26,12 +22,6 @@ public class TecyPlayes
   static String file_path = "";
   JButton actionbutton;
   JLabel jLabel1 = new JLabel("Error Message");
-  JTextArea textArea = new JTextArea(5, 20);
-  JScrollPane scrollPane = new JScrollPane(textArea);
-  JRadioButton birdButton = new JRadioButton("C");
-  JRadioButton catButton = new JRadioButton("CPP");
-  
-  ButtonGroup group = new ButtonGroup();
   
   public void Display()
   {
@@ -71,33 +61,12 @@ public class TecyPlayes
           if (evnt1.getSource() == TecyPlayes.this.actionbutton) {
             try
             {
-              File f;
-              String cfgval="";
-              if(birdButton.isSelected())
-              {
-            	  cfgval=birdButton.getText();
-              }
-              if(catButton.isSelected())
-              {
-            	  cfgval=catButton.getText();
-              }
-              if(cfgval.equals("CPP"))
-              {
-            	  f=new File("config_cpp.dat");
-              }
-              else
-              {
-            	  f=new File("config_c.dat");
-              }
-              textArea.setText(cfgval+'\n');
+              File f = new File("config.dat");
               FileReader fr = new FileReader(f);
               BufferedReader br = new BufferedReader(fr);
               String line = "";
-              textArea.append(TecyPlayes.file_path+'\n');              
-              int i=1;
               while ((line = br.readLine()) != null)
               {
-            	  textArea.append("processing Config"+i+++'\n');
                 Runtime r = Runtime.getRuntime();
                 System.out.println(line + TecyPlayes.file_path + " -o output\\temp_tm.cpp");
                 Process p = r.exec(line + TecyPlayes.file_path + " -o output\\temp_tm.cpp");
@@ -120,16 +89,15 @@ public class TecyPlayes
                 }
                 else
                 {
-                	textArea.append("Process filed to move"+'\n');
-                	break;
+                	System.out.println("Fail move");
                 }
               }
-              textArea.append("Process Completed"+'\n');
+              jLabel1.setText("Process Completed");
             }
             catch (Exception e)
             {
               System.out.println(e.getMessage());
-              textArea.append("Error While Processing"+e.getMessage()+'\n');
+              jLabel1.setText("Process Failed"+e.getMessage());
             }
           }
         }
@@ -139,17 +107,7 @@ public class TecyPlayes
     this.jFrame.add(this.jTextField);
     this.jFrame.add(this.jButton);
     this.jFrame.add(this.actionbutton);
-    //this.jFrame.add(jLabel1);
-    
-    this.jFrame.add(birdButton);
-    birdButton.setActionCommand("C");
-    this.jFrame.add(catButton);
-    catButton.setActionCommand("CPP");
-    birdButton.setSelected(true);
-    textArea.setEditable(false);
-    group.add(birdButton);
-    group.add(catButton);
-    this.jFrame.add(textArea);
+    this.jFrame.add(jLabel1);
     this.jFrame.setVisible(true);
     
     System.out.println(file_path);
